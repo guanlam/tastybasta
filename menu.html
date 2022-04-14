@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MENU | Tasty Basta</title>
+    <link rel="stylesheet" href="Me.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>  
+        <nav>
+            <img src="Logo.jpeg" alt=logo width="90px" height="90px">
+            <div class="title">TASTY BASTA</div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="career.html">CAREER</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a class="aboutus" href="about.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="bgmenu">
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="material-icons" style="font-size:36px">arrow_upward</i>
+        </button>
+
+        <h1 class="hcenter">
+            <ul>
+                <li><a href="#pmu">Pasta Menu</a></li>
+                <li><a href="#cmu">Chops Menu</a></li>
+                <li><a href="#smu">Seafood Menu</a></li>
+                <li><a href="#dmu">Drinks Menu</a></li>
+                <li><a href="#wmu">Wine Menu</a></li>
+            </ul>    
+        </h1>
+
+        <br><br>
+
+        <h2 class="center" id="pmu" >
+            Pasta Menu
+        </h2>
+        <img src="menu/TASTY BASTA (2).png" alt="pasta menu" class="icenter"><br>
+    
+        <h2 class="center" id="cmu" >
+            Chops Menu
+        </h2>
+        <img src="menu/TASTY BASTA (3).png" alt="chops menu" class="icenter">
+        
+        <h2 class="center" id="smu" >
+            Seafood Menu
+        </h2>
+        <img src="menu/TASTY BASTA (5).png" alt="Seafood menu" class="icenter">
+    
+        <h2 class="center" id="dmu" >
+            Drinks Menu
+        </h2>
+        <img src="menu/TASTY BASTA (4).png" alt="drinks menu" class="icenter"> 
+    
+        <h2 class="center" id="wmu" >
+        Wine Menu
+        </h2>
+        <img src="menu/TASTY BASTA.png" alt="Wine menu" class="icenter">
+        <br>
+
+        <script>
+            var mybutton = document.getElementById("myBtn");
+    
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+                } 
+                else {
+                mybutton.style.display = "none";
+                }
+            }
+    
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </main>
+
+    <footer>
+        <table>
+            <tr>
+                <th>Location me</th>
+                <th class="hour">Opening Hours</th>
+            </tr>
+            <tr>
+                <td>LOT 9 MASJID AL IMAM ASH SHAFIE<br> JLN PERKASA TAMAN MALURI<br>
+                    CHERAS, Kuala Lumpur, 55100<br>
+                    9200 2335</td>
+                <td class="hour">Mon-Sun: 9am-10pm</td>
+            </tr>
+        </table>
+        <hr>
+        <p>Copyright &#169; 2021 Tasty Basta</p>
+    </footer>
+
+</body>
+</html>
